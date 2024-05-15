@@ -12,7 +12,8 @@ Pod::Spec.new do |s|
   s.license  = { :type => 'BSD', :file => 'LICENSE' }
   s.homepage = 'https://github.com/swisspol/GCDWebServer'
   s.summary  = 'Lightweight GCD based HTTP server for OS X & iOS (includes web based uploader & WebDAV server)'
-  
+  s.resource_bundles = {'GCDWebServer' => ['Resources/PrivacyInfo.xcprivacy']}
+
   s.source   = { :git => 'https://github.com/swisspol/GCDWebServer.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
